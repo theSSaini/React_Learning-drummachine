@@ -9,19 +9,28 @@ function App() {
     <div className="App">
       <header className="App-header">
         A drum machine
-        <button className="btn btn-primary">Hey</button>
-        {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+        {/* <button className="btn btn-primary">Hey</button> */}
+        <div className="square">
+          <div className="item1">
+          </div>
+          <div className="item2">
+          </div>
+          <div className="item3">
+          </div>
+          <div className="item4">
+          </div>
+          <div className="item5">
+          </div>
+          <div className="item6">
+          </div>
+          <div className="item7">
+          </div>
+          <div className="item8">
+          </div>
+          <div className="item9">
+          </div>
+        </div>
+        
       </header>
 
     </div>
