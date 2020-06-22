@@ -26,48 +26,118 @@
 }
 .square h1 {
   color: red;
+
+}
+.smallsquare {
+  background: whitesmoke;
+  width: 50vw;
+  height: 10vw;
+
+   border-radius: 10px; 
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;*/
+  margin: 20px 5px 5px 5px;
 }
 .item1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 1 /  2;
   grid-row: 1/2;
   background: #f7df65;
+  
+}
+
+.itemx{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
+  grid-column: 1 /  2;
+  grid-row: 1/2;
+  background: black;
+  
 }
 .item2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 2 /  3;
   grid-row: 1/2;
   background: #f797ba;
 }
 .item3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 3 /  4;
   grid-row: 1/2;
   background: #97f7ef;
 }
 .item4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 1 /  2;
   grid-row: 2/3;
   background: #f584ef;
 }
 .item5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 2 /  3;
   grid-row: 2/3;
   background: #b88dfc;
 }
 .item6{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 3 /  4;
   grid-row: 2/3;
   background: #d098f5;
 }
 .item7{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 1 /  2;
   grid-row: 3/4;
   background: #5ce6d8;
 }
 .item8{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 2 /  3;
   grid-row: 3/4;
   background: #53fc8e;
 }
 .item9{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 1em;
   grid-column: 3 /  4;
   grid-row: 3/4;
   background: #ffdd00;
@@ -123,6 +193,6 @@
       background-color: #00c3ff
   }
 }
-div:hover {
+.square *:hover {
   background-color: blue;
 }
