@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
+
 import './App.css';
 import {bankOne, bankTwo, soundPlay, notes} from './sounds'
 import {MyApp, PadBank, DrumPad} from './Example'
 
 const possibleKeys=[81, 87, 69, 65, 83, 68, 90, 88, 67];
+const usedPad={background: "red"};
+const notUsedPad={background: ""}
 
 class App extends React.Component {
   constructor(props) {
@@ -13,7 +16,7 @@ class App extends React.Component {
     this.handleKey=this.handleKey.bind(this);
     this.state = {
       soundURl:"",
-      padStyle:"",
+      padStyle:null,
       soundName:""
     }}
     componentDidMount() {
@@ -21,20 +24,24 @@ class App extends React.Component {
     }
     componentWillUnmount() {
       document.removeEventListener('keydown', this.handleKey);
+      this.setState({padStyle:notUsedPad})
     }
     handleKey(e){
       if (possibleKeys.includes(e.keyCode)){
-      this.setState({soundURl:notes[e.keyCode].url,soundName:notes[e.keyCode].id })
+      this.setState({soundURl:notes[e.keyCode].url,
+        soundName:notes[e.keyCode].id,
+        padStyle:usedPad})
+      
+      this.start();
+    }
+    }
 
-        
-        this.start();
-    }
-    }
   start(){
 
     let audio = new Audio(this.state.soundURl)
     audio.play()
   }
+  
 
   render(){
     
